@@ -268,3 +268,16 @@ constexpr char sub_valve_position::name[];
 
 constexpr ObisId sub_delivered::id;
 constexpr char sub_delivered::name[];
+
+/* extra field for Tauron ZE.314 */
+constexpr ObisId meter_time::id;
+constexpr char meter_time::name[];
+
+constexpr ObisId meter_date::id;
+constexpr char meter_date::name[];
+
+constexpr ObisId total_imported_inductive_reactive_energy::id;
+constexpr char total_imported_inductive_reactive_energy::name[];
+
+constexpr ObisId total_imported_capacitive_reactive_energy::id;
+constexpr char total_imported_capacitive_reactive_energy::name[];

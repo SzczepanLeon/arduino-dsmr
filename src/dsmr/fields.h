@@ -431,6 +431,12 @@ namespace dsmr
     DEFINE_FIELD(sub_delivered, TimestampedFixedValue, ObisId(0, SUB_MBUS_ID, 24, 2, 1), TimestampedFixedField,
                  units::m3, units::dm3);
 
+    /* extra field for Tauron ZE.314 */
+    DEFINE_FIELD(meter_time, String, ObisId(1, 0, 0, 9, 1), StringField, 0, 8);
+    DEFINE_FIELD(meter_date, String, ObisId(1, 0, 0, 9, 2), StringField, 0, 8);
+    DEFINE_FIELD(total_imported_inductive_reactive_energy, FixedValue, ObisId(1, 0, 5, 8, 0), FixedField, units::kvarh, units::kvarh);
+    DEFINE_FIELD(total_imported_capacitive_reactive_energy, FixedValue, ObisId(1, 0, 8, 8, 0), FixedField, units::kvarh, units::kvarh);
+
   } // namespace fields
 
 } // namespace dsmr
