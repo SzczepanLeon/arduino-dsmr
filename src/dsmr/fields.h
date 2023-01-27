@@ -436,7 +436,7 @@ namespace dsmr
     DEFINE_FIELD(meter_date, String, ObisId(1, 0, 0, 9, 2), StringField, 0, 8);
     DEFINE_FIELD(total_imported_inductive_reactive_energy, FixedValue, ObisId(1, 0, 5, 8, 0), FixedField, units::kvarh, units::kvarh);
     DEFINE_FIELD(total_imported_capacitive_reactive_energy, FixedValue, ObisId(1, 0, 8, 8, 0), FixedField, units::kvarh, units::kvarh);
-    DEFINE_FIELD(absolute_active_instantaneous_power, FixedValue, ObisId(0, 0, 15, 7, 0), FixedField, units::kW, units::W);
+    DEFINE_FIELD(absolute_active_instantaneous_power, FixedValue, ObisId(1, 0, 15, 7, 0), FixedField, units::kW, units::W);
 
   } // namespace fields
 
