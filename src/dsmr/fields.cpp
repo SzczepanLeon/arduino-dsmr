@@ -281,3 +281,6 @@ constexpr char total_imported_inductive_reactive_energy::name[];
 
 constexpr ObisId total_imported_capacitive_reactive_energy::id;
 constexpr char total_imported_capacitive_reactive_energy::name[];
+
+constexpr ObisId absolute_active_instantaneous_power::id;
+constexpr char absolute_active_instantaneous_power::name[];
